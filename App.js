@@ -4,10 +4,11 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
+    //부모
     <View style={styles.container}>
-      <View style={styles.yellowView}></View>
-      <View style={styles.blueView}></View>
-      <StatusBar style="auto"/>
+      <View style={styles.blackView}></View>
+      <View style={styles.whiteView}></View>
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -16,12 +17,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  yellowView: {
+  blackView: {
     flex: 1,
-    backgroundColor: "yellow",
+    backgroundColor: "black",
   },
-  blueView: {
-    backgroundColor: "blue",
+  whiteView: {
+    backgroundColor: "white",
     flex: 1,
   },
 });
